@@ -9,6 +9,7 @@ When used in conjunction with the [Hashicorp Vault plugin for Quorum](https://gi
 ## Building
 ```shell
 make
+
 ```
 
 ## Quickstart 
