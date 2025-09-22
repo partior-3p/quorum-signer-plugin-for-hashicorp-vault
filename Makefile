@@ -36,5 +36,5 @@ tools: goimports
 
 goimports:
 ifeq (, $(shell which goimports))
-	@GO111MODULE=off go get -u golang.org/x/tools/cmd/goimports
+	@GO111MODULE=on go get -u golang.org/x/tools/cmd/goimports
 endif
