@@ -1,9 +1,19 @@
 name: Quorum Signer Plugin CI
 on:
   pull_request:
-    branches: [ main, release/**, hotfix/** ]
+    branches: [ main, release/**, hotfix/**, hotfix-base/** ]
+    paths-ignore:
+      - '.github/**'
+      - '*.md'
+      - '.gitignore'
+      - 'CODEOWNERS'
   push:
-    branches: [ main ]
+    branches: [ main, hotfix-base/** ]
+    paths-ignore:
+      - '.github/**'
+      - '*.md'
+      - '.gitignore'
+      - 'CODEOWNERS'
   workflow_dispatch:  
 jobs:
   ci-pipeline:
